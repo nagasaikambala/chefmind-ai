@@ -1,0 +1,252 @@
+[
+  {
+    "title": "Egg Onion Omelette",
+    "ingredients": ["egg", "onion", "salt", "pepper", "oil"],
+    "instructions": "Beat eggs with onions and spices, then cook in oil."
+  },
+  {
+    "title": "Tomato Egg Curry",
+    "ingredients": ["egg", "tomato", "onion", "spices", "oil"],
+    "instructions": "Boil eggs and cook in a tomato-onion gravy."
+  },
+  {
+    "title": "Vegetable Fried Rice",
+    "ingredients": ["rice", "carrot", "beans", "onion", "soy sauce", "oil"],
+    "instructions": "Stir-fry vegetables, add rice and soy sauce."
+  },
+  {
+    "title": "Potato Fry",
+    "ingredients": ["potato", "turmeric", "chili powder", "oil", "salt"],
+    "instructions": "Fry sliced potatoes with spices."
+  },
+  {
+    "title": "Curd Rice",
+    "ingredients": ["rice", "curd", "salt", "coriander"],
+    "instructions": "Mix rice with curd and salt, garnish with coriander."
+  },
+  {
+    "title": "Chicken Curry",
+    "ingredients": ["chicken", "onion", "tomato", "spices", "oil"],
+    "instructions": "Cook chicken in onion-tomato gravy with spices."
+  },
+  {
+    "title": "Paneer Butter Masala",
+    "ingredients": ["paneer", "butter", "cream", "tomato", "spices"],
+    "instructions": "Cook paneer in buttery tomato gravy."
+  },
+  {
+    "title": "Masala Dosa",
+    "ingredients": ["dosa batter", "potato", "onion", "spices", "oil"],
+    "instructions": "Spread dosa batter and add potato masala."
+  },
+  {
+    "title": "Upma",
+    "ingredients": ["rava", "onion", "green chili", "vegetables", "salt"],
+    "instructions": "Roast rava and cook with sautéed vegetables."
+  },
+  {
+    "title": "Sambar",
+    "ingredients": ["toor dal", "vegetables", "tamarind", "sambar powder"],
+    "instructions": "Cook dal with vegetables and spices."
+  },
+  {
+    "title": "Rasam",
+    "ingredients": ["tomato", "tamarind", "rasam powder", "garlic"],
+    "instructions": "Boil tamarind water with tomatoes and spices."
+  },
+  {
+    "title": "Chapati",
+    "ingredients": ["wheat flour", "water", "salt"],
+    "instructions": "Knead dough, roll and cook on tawa."
+  },
+  {
+    "title": "Idli",
+    "ingredients": ["idli batter", "salt"],
+    "instructions": "Steam batter in idli moulds."
+  },
+  {
+    "title": "Dosa",
+    "ingredients": ["dosa batter", "oil"],
+    "instructions": "Spread batter thin and cook."
+  },
+  {
+    "title": "Aloo Paratha",
+    "ingredients": ["wheat flour", "potato", "spices", "ghee"],
+    "instructions": "Fill dough with potato masala and cook."
+  },
+  {
+    "title": "Chole",
+    "ingredients": ["chickpeas", "onion", "tomato", "spices", "oil"],
+    "instructions": "Cook chickpeas in spiced gravy."
+  },
+  {
+    "title": "Biryani",
+    "ingredients": ["rice", "chicken", "onion", "yogurt", "spices"],
+    "instructions": "Layer rice and chicken and steam cook."
+  },
+  {
+    "title": "Pulao",
+    "ingredients": ["rice", "vegetables", "spices", "ghee"],
+    "instructions": "Cook rice with sautéed vegetables."
+  },
+  {
+    "title": "Lemon Rice",
+    "ingredients": ["rice", "lemon", "peanuts", "turmeric", "oil"],
+    "instructions": "Mix lemon juice with rice and peanuts."
+  },
+  {
+    "title": "Veg Sandwich",
+    "ingredients": ["bread", "tomato", "cucumber", "onion", "butter"],
+    "instructions": "Assemble vegetables between bread slices."
+  },
+  {
+    "title": "Egg Biryani",
+    "ingredients": ["egg", "rice", "fried onions", "spices", "ghee"],
+    "instructions": "Layer rice and eggs, then steam cook."
+  },
+  {
+    "title": "Maggie Masala",
+    "ingredients": ["noodles", "masala", "water", "vegetables"],
+    "instructions": "Cook noodles with vegetables."
+  },
+  {
+    "title": "Bhindi Fry",
+    "ingredients": ["bhindi", "turmeric", "chili powder", "salt", "oil"],
+    "instructions": "Fry sliced bhindi until crispy."
+  },
+  {
+    "title": "Egg Fried Rice",
+    "ingredients": ["rice", "egg", "soy sauce", "spring onion", "oil"],
+    "instructions": "Mix scrambled eggs with fried rice."
+  },
+  {
+    "title": "Mushroom Curry",
+    "ingredients": ["mushroom", "onion", "tomato", "spices", "oil"],
+    "instructions": "Cook mushrooms in tomato gravy."
+  },
+  {
+    "title": "Fish Fry",
+    "ingredients": ["fish", "chili powder", "turmeric", "salt", "oil"],
+    "instructions": "Marinate fish and fry."
+  },
+  {
+    "title": "Poha",
+    "ingredients": ["poha", "onion", "peanuts", "turmeric", "lemon"],
+    "instructions": "Cook poha with onions and lemon."
+  },
+  {
+    "title": "Pav Bhaji",
+    "ingredients": ["potato", "tomato", "peas", "pav masala", "butter"],
+    "instructions": "Cook mashed vegetables with masala."
+  },
+  {
+    "title": "Masala Tea",
+    "ingredients": ["tea powder", "milk", "ginger", "cardamom"],
+    "instructions": "Boil tea with milk and spices."
+  },
+  {
+    "title": "French Toast",
+    "ingredients": ["bread", "egg", "milk", "sugar"],
+    "instructions": "Dip bread in egg mixture and toast."
+  },
+  {
+    "title": "Pancakes",
+    "ingredients": ["flour", "milk", "egg", "sugar", "butter"],
+    "instructions": "Cook batter on a pan until golden."
+  },
+  {
+    "title": "Tomato Soup",
+    "ingredients": ["tomato", "garlic", "butter", "pepper", "salt"],
+    "instructions": "Blend boiled tomatoes and simmer with spices."
+  },
+  {
+    "title": "Grilled Cheese Sandwich",
+    "ingredients": ["bread", "cheese", "butter"],
+    "instructions": "Grill cheese between buttered bread."
+  },
+  {
+    "title": "Fried Chicken",
+    "ingredients": ["chicken", "flour", "spices", "oil"],
+    "instructions": "Coat chicken in flour and deep fry."
+  },
+  {
+    "title": "Veg Pasta",
+    "ingredients": ["pasta", "tomato sauce", "vegetables", "cheese"],
+    "instructions": "Cook pasta and mix with vegetables and sauce."
+  },
+  {
+    "title": "Chicken Pasta",
+    "ingredients": ["pasta", "chicken", "cream", "garlic", "cheese"],
+    "instructions": "Cook pasta and mix with creamy chicken sauce."
+  },
+  {
+    "title": "Garlic Bread",
+    "ingredients": ["bread", "garlic", "butter", "herbs"],
+    "instructions": "Bake bread with garlic butter."
+  },
+  {
+    "title": "Egg Curry",
+    "ingredients": ["egg", "onion", "tomato", "garam masala"],
+    "instructions": "Cook eggs in spiced gravy."
+  },
+  {
+    "title": "Pulihora",
+    "ingredients": ["rice", "tamarind", "turmeric", "chili", "peanuts"],
+    "instructions": "Mix rice with tamarind seasoning."
+  },
+  {
+    "title": "Kadhi",
+    "ingredients": ["curd", "gram flour", "spices"],
+    "instructions": "Cook yogurt and gram flour mixture with spices."
+  },
+  {
+    "title": "Dal Tadka",
+    "ingredients": ["dal", "garlic", "ghee", "spices"],
+    "instructions": "Temper cooked dal with garlic and spices."
+  },
+  {
+    "title": "Chana Masala",
+    "ingredients": ["chickpeas", "onion", "tomato", "spices"],
+    "instructions": "Cook chickpeas in spicy gravy."
+  },
+  {
+    "title": "Veg Burger",
+    "ingredients": ["bun", "veg patty", "lettuce", "cheese"],
+    "instructions": "Assemble burger with patty and veggies."
+  },
+  {
+    "title": "Chicken Sandwich",
+    "ingredients": ["bread", "chicken", "mayonnaise", "lettuce"],
+    "instructions": "Mix shredded chicken with mayo and fill sandwich."
+  },
+  {
+    "title": "Masala Omelette",
+    "ingredients": ["egg", "onion", "green chili", "tomato"],
+    "instructions": "Cook spiced beaten eggs on a pan."
+  },
+  {
+    "title": "Veg Noodles",
+    "ingredients": ["noodles", "carrot", "beans", "soy sauce"],
+    "instructions": "Stir-fry veggies and mix with noodles."
+  },
+  {
+    "title": "Chicken Noodles",
+    "ingredients": ["noodles", "chicken", "soy sauce", "pepper"],
+    "instructions": "Cook noodles with shredded chicken."
+  },
+  {
+    "title": "Chocolate Milkshake",
+    "ingredients": ["milk", "chocolate", "sugar", "ice cream"],
+    "instructions": "Blend milk with chocolate and ice cream."
+  },
+  {
+    "title": "Fruit Salad",
+    "ingredients": ["banana", "apple", "grapes", "honey"],
+    "instructions": "Mix chopped fruits with honey."
+  },
+  {
+  "title": "Idly",
+  "ingredients": ["idly batter", "salt"],
+  "instructions": "Steam batter in idly plates."
+}
+]

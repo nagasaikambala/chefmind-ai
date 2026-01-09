@@ -1,0 +1,1 @@
+curl -X POST "http://127.0.0.1:8000/recipes/search" -H "Content-Type: application/json" -d "{\"ingredients\":[\"egg\",\"onion\"], \"top_k\":3}"
