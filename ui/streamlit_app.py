@@ -148,11 +148,11 @@ if user_input:
 
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
-        message_placeholder.markdown("⏳ Thinking...")
 
         try:
-            response = requests.post(API_URL, json=payload, timeout=20)
-            data = response.json()
+            with st.spinner("Cooking something delicious... 🍳"):
+                response = requests.post(API_URL, json=payload, timeout=20)
+                data = response.json()
 
             time.sleep(0.5)
 
