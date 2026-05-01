@@ -4,7 +4,7 @@ import time
 import base64
 import os
 
-API_URL = "http://127.0.0.1:8000/recipes/search"
+API_URL = "https://chefmind-ai-1.onrender.com/recipes/search"
 
 # ================= CONFIG =================
 st.set_page_config(page_title="ChefMind", page_icon="🍳", layout="wide")
@@ -151,7 +151,7 @@ if user_input:
         message_placeholder.markdown("⏳ Thinking...")
 
         try:
-            response = requests.post(API_URL, json=payload, timeout=10)
+            response = requests.post(API_URL, json=payload, timeout=20)
             data = response.json()
 
             time.sleep(0.5)
