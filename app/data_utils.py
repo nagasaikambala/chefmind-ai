@@ -2,14 +2,13 @@ import json
 import os
 
 def load_recipes():
-    # Correct path: project_root/recipes.json
-    root = os.path.dirname(os.path.dirname(__file__))  # go up to project folder
+    root = os.path.dirname(os.path.dirname(__file__))
     file_path = os.path.join(root, "recipes.json")
 
-    print("Loading recipes from:", file_path)  # Debug
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"recipes.json not found at {file_path}")
 
-    with open(file_path, "r") as f:
+    with open(file_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    print("Loaded recipes:", len(data))  # Debug
     return data
