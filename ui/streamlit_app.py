@@ -149,29 +149,49 @@ if user_input:
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
 
+        ```python
         try:
             with st.spinner("Cooking something delicious... 🍳"):
-                response = requests.post(API_URL, json=payload, timeout=20)
+                # Allow extra time for Render's free service to wake up
+                response = requests.post(
+                    API_URL,
+                    json=payload,
+                    timeout=(10, 90)
+                )
+
+                # Show HTTP errors instead of silently hiding them
+                response.raise_for_status()
                 data = response.json()
 
             time.sleep(0.5)
 
             reply = ""
+            source = data.get("source")
 
-            if data["source"] == "retrieval":
+            if source == "retrieval":
                 reply += "### 🥘 Suggested Recipes\n\n"
-                for r in data["results"]:
-                    reply += f"#### 🍽️ {r['title']}\n"
-                    reply += f"**Ingredients:** {', '.join(r['ingredients'])}\n\n"
-                    reply += f"**Instructions:** {r['instructions']}\n\n"
+
+                for r in data.get("results", []):
+                    reply += f"#### 🍽️ {r.get('title', 'Untitled Recipe')}\n"
+                    reply += (
+                        f"**Ingredients:** "
+                        f"{', '.join(r.get('ingredients', []))}\n\n"
+                    )
+                    reply += (
+                        f"**Instructions:** "
+                        f"{r.get('instructions', 'No instructions available.')}\n\n"
+                    )
                     reply += "---\n"
 
-            elif data["source"] == "llm":
+                if not data.get("results"):
+                    reply = "⚠️ No matching recipes were returned."
+
+            elif source == "llm":
                 reply += "### 🤖 AI Generated Recipe\n\n"
-                reply += data["generated"]
+                reply += data.get("generated", "No generated recipe was returned.")
 
             else:
-                reply += "⚠️ No strong matches found."
+                reply = "⚠️ No strong matches found."
 
             message_placeholder.markdown(reply)
 
@@ -180,12 +200,60 @@ if user_input:
                 "content": reply
             })
 
-        except Exception:
-            error_msg = "❌ Backend not reachable. Start FastAPI."
-
+        except requests.exceptions.Timeout:
+            error_msg = (
+                "⏳ ChefMind is taking longer than expected. "
+                "The server may be waking up after inactivity. "
+                "Please wait a little and try again."
+            )
             message_placeholder.markdown(error_msg)
-
             st.session_state.messages.append({
                 "role": "assistant",
                 "content": error_msg
             })
+
+        except requests.exceptions.HTTPError as e:
+            status_code = response.status_code
+            error_msg = (
+                f"⚠️ The ChefMind backend returned HTTP {status_code}. "
+                "Please try again shortly."
+            )
+            message_placeholder.markdown(error_msg)
+            st.session_state.messages.append({
+                "role": "assistant",
+                "content": error_msg
+            })
+
+        except requests.exceptions.ConnectionError:
+            error_msg = (
+                "❌ Could not connect to the ChefMind backend. "
+                "Please check the server and try again."
+            )
+            message_placeholder.markdown(error_msg)
+            st.session_state.messages.append({
+                "role": "assistant",
+                "content": error_msg
+            })
+
+        except (ValueError, KeyError, TypeError):
+            error_msg = (
+                "⚠️ The backend returned an unexpected response. "
+                "Please try again."
+            )
+            message_placeholder.markdown(error_msg)
+            st.session_state.messages.append({
+                "role": "assistant",
+                "content": error_msg
+            })
+
+        except requests.exceptions.RequestException:
+            error_msg = (
+                "❌ A network error occurred while contacting ChefMind. "
+                "Please try again."
+            )
+            message_placeholder.markdown(error_msg)
+            st.session_state.messages.append({
+                "role": "assistant",
+                "content": error_msg
+            })
+```
