@@ -149,7 +149,6 @@ if user_input:
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
 
-        ```python
         try:
             with st.spinner("Cooking something delicious... 🍳"):
                 # Allow extra time for Render's free service to wake up
@@ -256,4 +255,3 @@ if user_input:
                 "role": "assistant",
                 "content": error_msg
             })
-```
